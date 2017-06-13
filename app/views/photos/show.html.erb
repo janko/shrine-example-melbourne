@@ -12,7 +12,7 @@
 
 <p>
   <strong>Image:</strong>
-  <%= image_tag @photo.image_url, size: "500x500" %>
+  <%= image_tag @photo.image_url(:medium), size: "500x500" %>
 </p>
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |

@@ -55,3 +55,7 @@ gem 'pry-rails'
 
 # File uploads
 gem 'shrine'
+
+gem 'image_processing'
+gem 'fastimage'
+gem 'mini_magick'

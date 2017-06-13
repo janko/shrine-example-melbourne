@@ -10,5 +10,10 @@
   <%= @photo.description %>
 </p>
 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @photo.image_url, size: "500x500" %>
+</p>
+
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', photos_path %>

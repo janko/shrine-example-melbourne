@@ -21,6 +21,12 @@
     <%= form.text_area :description, id: :photo_description %>
   </div>
 
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :photo_image %>
+    <%= image_tag photo.image_url, size: "300x300" if photo.image %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>

@@ -23,6 +23,7 @@
 
   <div class="field">
     <%= form.label :image %>
+    <%= form.hidden_field :image, id: :photo_image_hiden, value: photo.cached_image_data %>
     <%= form.file_field :image, id: :photo_image %>
     <%= image_tag photo.image_url, size: "300x300" if photo.image %>
   </div>
